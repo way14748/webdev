@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4의 배수 판독기</title>
+  <style>
+    body {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>4의 배수일까 아닐까</h1>
+<script>
+  var inNum = prompt("숫자를 입력하시오.");
+
+  if(inNum !== null){
+    if(inNum % 4 === 0 && inNum != 0 ){
+      document.write(inNum + "은(는) 4의 배수입니다.");
+    }
+    else{
+      document.write(inNum + "은(는) 4의 배수가 아닙니다.");
+    }
+  }
+  else{
+    alert("입력을 취소하셨습니다.");
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>플렉스 박스 레이아웃</title>
+  <style>
+    .container {
+      width: 450px;
+      height: 150px;
+      display: flex; /* 플렉스 컨테이너로 지정 */
+      background-color: #eee;
+      border: 1px solid #222;
+      margin-bottom: 30px;
+      align-items: center;
+    }
+    .box {
+      padding: 5px 45px;
+      margin: 5px;
+      width: 120px;
+      background-color: #222222;
+    }
+    #box1 {
+      align-self: flex-start;
+    }
+
+    #box3 {
+      align-self: stretch;
+    }
+
+    p {
+      color: lavender;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container" id="opt1">
+  <div class="box" id="box1">
+    <p>1</p>
+  </div>
+  <div class="box">
+    <p>2</p>
+  </div>
+  <div class="box" id="box3">
+    <p>3</p>
+  </div>
+  <div class="box">
+    <p>4</p>
+</div>
+</div>
+</body>
+</html>

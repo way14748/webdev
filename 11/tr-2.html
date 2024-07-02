@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transition</title>
+  <style>
+    .box {
+      margin: 50px auto;
+      width: 100px;
+      height: 100px;
+      background-color: #fb5;
+      border: 1px solid black;
+      /*transition-property: width, height;*/
+      /*transition-duration: 2s, 1s;*/
+      transition: 2s ease-in;
+
+    }
+    .box:hover{
+      width: 200px;
+      height: 200px;
+      background-color: indianred;
+      transform: rotate(270deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

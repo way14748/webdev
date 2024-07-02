@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>자리 배치도</title>
+  <style>
+    table, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 5px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+<script>
+  var memNum = prompt("입장객은 몇명인가요?");
+  var colNum = prompt("한 줄에 몇명씩 앉습니까?");
+
+  if(memNum % colNum === 0)
+    rowNum = parseInt(memNum / colNum);
+  else
+    rowNum = parseInt(memNum / colNum) + 1;
+
+  var seatNo;
+
+  document.write("<table>");
+  for (var i = 0; i<rowNum; i++){
+    document.write("<tr>");
+    for (var j = 1; j <= colNum; j++){
+      seatNo = i * colNum + j; //좌석번호
+      if(seatNo > memNum) break;
+      document.write("<td> 좌석 " + seatNo + " </td>");
+    }
+    document.write("</tr>"); // 줄 바꾸기
+  }
+  document.write("</table>")
+</script>
+</body>
+</html>
